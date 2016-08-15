@@ -1,0 +1,12 @@
+version: '2'
+services:
+ yacy:
+  build: ../yacy
+  image: mcsaky/yacy
+  ports:
+   - 8090:8090
+  environment:
+   - ADMIN=sysop
+   - ADMINPASS=sysop
+
+
